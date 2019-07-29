@@ -7,16 +7,26 @@ use Illuminate\Database\Eloquent\Model;
 class WpUsers extends Model
 {
     /**
-     * モデルと関連しているテーブル
+     * table name setting
      *
      * @var string
      */
     protected $table = 'wp_users';
 
     /**
-     * 複数代入しない属性
+     * The attributes that aren't mass assignable.
      *
      * @var array
      */
     protected $guarded = [];
+
+    /**
+     * not use timestamps
+     */
+    public $timestamps = false;
+
+    /**
+     * primary key setting
+     */
+    protected $primaryKey = 'ID';
 }

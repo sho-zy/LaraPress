@@ -4,9 +4,9 @@
 - Docker Compose (https://docs.docker.com/compose/)  
 
 ## Set up
-  > `git clone https://github.com/sho-zy/laravelSample.git`  
+  > `git clone https://github.com/sho-zy/LaraPress.git`  
   > `docker-compose up -d`  
-  > `docker exec -it laravelsample_phpfpm_1 /bin/sh`  (enter the container)  
+  > `docker exec -it larapress_phpfpm_1 /bin/sh`  (enter the container)  
   > `composer install`  
   > `php artisan key:generate`  
   > `php artisan migrate:fresh`  
